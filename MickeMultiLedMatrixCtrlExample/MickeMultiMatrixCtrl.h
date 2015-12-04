@@ -34,6 +34,7 @@ The original code was written for the Wiring board by :
 	#include "WProgram.h"
 #endif
 
+#include "Header.h"
 
 class MickeMultiMatrixCtrl
 {

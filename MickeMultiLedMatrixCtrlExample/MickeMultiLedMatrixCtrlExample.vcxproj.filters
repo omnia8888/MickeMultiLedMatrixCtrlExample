@@ -24,9 +24,18 @@
     <ClInclude Include="MickeMultiMatrixCtrl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MatrixSymbols.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClockSymbols.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MickeMultiMatrixCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixSymbols.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -74,10 +74,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ClockSymbols.h" />
+    <ClInclude Include="MatrixSymbols.h" />
     <ClInclude Include="MickeMultiMatrixCtrl.h" />
     <ClInclude Include="__vm\.MickeMultiLedMatrixCtrlExample.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MatrixSymbols.cpp" />
     <ClCompile Include="MickeMultiMatrixCtrl.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
