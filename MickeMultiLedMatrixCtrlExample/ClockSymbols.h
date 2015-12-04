@@ -5,8 +5,9 @@
 Stores the symbols to be displayed on clock.
 */
 
+#define SYMBOLS_CLOCK_SINGLE_MEM_SIZE 8
 
-byte digitSymbolsTest[] PROGMEM = {
+const byte ClockMatrixSymbols[] PROGMEM = {
 	B01110000,	//0
 	B10001000,
 	B10011000,

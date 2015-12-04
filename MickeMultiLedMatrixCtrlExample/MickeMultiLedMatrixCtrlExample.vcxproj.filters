@@ -30,12 +30,18 @@
     <ClInclude Include="ClockSymbols.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MickeLedMatrixDisplay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MickeMultiMatrixCtrl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MatrixSymbols.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MickeLedMatrixDisplay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,7 +4,9 @@
  Author:	Micke
 */
 
+#include "MickeLedMatrixDisplay.h"
 #include "MickeMultiMatrixCtrl.h"
+#include "MatrixSymbols.h"
 
 //Pin nummer konfigurationen som enheterna är
 //inkopplade på
@@ -22,6 +24,8 @@ void setup() {
 	
 	MickeMultiMatrixCtrl mMMC(12, 11, 10, 5);
 
+	MickeLedMatrixDisplay mlmDisp(mMMC);
+
 	mMMC.initLedModules(5,true);
 
 	//mMMC.singleMaxModule(4,1, B00111100);
@@ -31,6 +35,9 @@ void setup() {
 	mMMC.setMatrixData(2, 7, B11100000);
 
 	mMMC.displayMatrixData();
+
+	
+
 
 }
 

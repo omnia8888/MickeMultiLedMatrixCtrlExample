@@ -2,22 +2,15 @@
 // 
 // 
 
-#include "MatrixSymbols.h"
+#include "MickeLedMatrixDisplay.h"
 
-
-
-
-MatrixSymbols::MatrixSymbols()
+MickeLedMatrixDisplay::MickeLedMatrixDisplay(MickeMultiMatrixCtrl mmmCtrl)
+	:MickeMultiMatrixCtrl(mmmCtrl)
 {
 
 }
 
-void MatrixSymbols::loadSymbolData(byte symbolDigit)
-{
-
-}
-
-void MatrixSymbols::loadClockSymbolData(byte clockDigit)
+void MickeLedMatrixDisplay::loadSymbolData(byte symbolDigit)
 {
 	//Calculate start of symbol in ClockSymbols array.
 	byte symStart = clockDigit * SYMBOLS_CLOCK_SINGLE_MEM_SIZE;
@@ -27,5 +20,4 @@ void MatrixSymbols::loadClockSymbolData(byte clockDigit)
 		symbolData[i] = ClockMatrixSymbols[i + symStart];
 
 	}
-
 }
