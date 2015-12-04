@@ -17,6 +17,20 @@
 
 
 void setup() {
+	Serial.begin(9600);
+	delay(1000);
+	
+	MickeMultiMatrixCtrl mMMC(12, 11, 10, 5);
+
+	mMMC.initLedModules(5,true);
+
+	//mMMC.singleMaxModule(4,1, B00111100);
+
+	mMMC.setMatrixData(0, 0, B10000000);
+	mMMC.setMatrixData(1, 1, B11000000);
+	mMMC.setMatrixData(2, 7, B11100000);
+
+	mMMC.displayMatrixData();
 
 }
 

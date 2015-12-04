@@ -85,4 +85,6 @@ extern "C" void __cxa_pure_virtual() {;}
 #define portInputRegister(P)
 #define portModeRegister(P)
 #include <..\MickeMultiLedMatrixCtrlExample\MickeMultiLedMatrixCtrlExample.ino>
+#include <..\MickeMultiLedMatrixCtrlExample\MickeMultiMatrixCtrl.cpp>
+#include <..\MickeMultiLedMatrixCtrlExample\MickeMultiMatrixCtrl.h>
 #endif
