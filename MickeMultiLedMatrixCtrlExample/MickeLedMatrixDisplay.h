@@ -12,7 +12,8 @@
 #include "MickeMultiMatrixCtrl.h"
 #include "ClockSymbols.h"
 
-static byte* symbolData;
+
+static byte *symbolDataStore;
 
 class MickeLedMatrixDisplay:MickeMultiMatrixCtrl
 {
@@ -22,7 +23,22 @@ class MickeLedMatrixDisplay:MickeMultiMatrixCtrl
  public:
 	 MickeLedMatrixDisplay(MickeMultiMatrixCtrl mmmCtrl);
 
+	 void loadSunSymbolData();
+
 	 void loadSymbolData(byte symbolDigit);
+
+	 void setSymbolFromStore();
+
+	 byte symbolSun[8] = {
+		 B10010010,
+		 B01010100,
+		 B00111000,
+		 B11111110,
+		 B00111000,
+		 B01010100,
+		 B10010010,
+		 B00000000
+	 };
 };
 
 

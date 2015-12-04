@@ -75,13 +75,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ClockSymbols.h" />
-    <ClInclude Include="MatrixSymbols.h" />
     <ClInclude Include="MickeLedMatrixDisplay.h" />
     <ClInclude Include="MickeMultiMatrixCtrl.h" />
     <ClInclude Include="__vm\.MickeMultiLedMatrixCtrlExample.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MatrixSymbols.cpp" />
     <ClCompile Include="MickeLedMatrixDisplay.cpp" />
     <ClCompile Include="MickeMultiMatrixCtrl.cpp" />
   </ItemGroup>

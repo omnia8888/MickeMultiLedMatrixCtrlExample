@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _CLOCKSYMBOLS_h
+#define _CLOCKSYMBOLS_h
+
 #include "stdio.h"
 
 /*
@@ -97,3 +99,15 @@ const byte ClockMatrixSymbols[] PROGMEM = {
 	B00010000,
 	B01100000,
 	6 };
+
+const uint8_t symbolSun[] PROGMEM = {
+	B10010010,
+	B01010100,
+	B00111000,
+	B11111110,
+	B00111000,
+	B01010100,
+	B10010010,
+	B00000000 };
+
+#endif

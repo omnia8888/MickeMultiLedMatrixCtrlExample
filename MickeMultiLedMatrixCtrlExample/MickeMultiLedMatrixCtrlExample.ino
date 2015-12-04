@@ -6,7 +6,7 @@
 
 #include "MickeLedMatrixDisplay.h"
 #include "MickeMultiMatrixCtrl.h"
-#include "MatrixSymbols.h"
+
 
 //Pin nummer konfigurationen som enheterna är
 //inkopplade på
@@ -30,11 +30,13 @@ void setup() {
 
 	//mMMC.singleMaxModule(4,1, B00111100);
 
-	mMMC.setMatrixData(0, 0, B10000000);
-	mMMC.setMatrixData(1, 1, B11000000);
-	mMMC.setMatrixData(2, 7, B11100000);
+	//mMMC.setMatrixData(0, 0, B10000000);
+	//mMMC.setMatrixData(1, 1, B11000000);
+	/*mMMC.setMatrixData(2, 7, B11100000);
 
 	mMMC.displayMatrixData();
+*/
+	mlmDisp.loadSunSymbolData();
 
 	
 

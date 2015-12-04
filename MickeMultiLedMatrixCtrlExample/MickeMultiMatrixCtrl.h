@@ -34,7 +34,6 @@ The original code was written for the Wiring board by :
 	#include "WProgram.h"
 #endif
 
-#include "MatrixSymbols.h"
 
 class MickeMultiMatrixCtrl
 {
@@ -46,6 +45,7 @@ class MickeMultiMatrixCtrl
 
 	 void initLedModules(byte ledBrightness = 5,bool runTest=false);
 
+	 
 	 void setMatrixData(byte moduleIndex,byte column,byte rowData);
 	 
 	 void displayMatrixData();
